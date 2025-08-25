@@ -189,7 +189,7 @@ def add_all(*args:U[int,float,Decimal,Fraction]):
         the_sum += i
     return the_sum
 def multiply_all(*args:U[int,float,Decimal,Fraction]):
-    the_product = 0
+    the_product = 1
     for i in args:
         if not (isinstance(i,Real) and type(i) is not bool):
             raise TypeError(f"Expected Real, got {type(i).__name__} instead.")
