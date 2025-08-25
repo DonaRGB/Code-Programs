@@ -173,7 +173,7 @@ def show_nth_prime():
         num = int(input("Enter the term number of primes : "))
     except ValueError as e:
         raise TypeError(f"Expected int, got {type(num).__name__} instead.")
-    prime = show_nth_prime(num)
+    prime = nth_prime(num)
     term = dsa(num)
     print(f"The {term} prime is {prime}.")
     return
